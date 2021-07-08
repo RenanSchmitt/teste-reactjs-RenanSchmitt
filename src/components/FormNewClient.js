@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/Login.css';
+import '../styles/NewClient.css';
 import '../styles/Inputs.css';
 import '../styles/Buttons.css';
-import loading from '../images/logo.svg';
-import logo from '../images/logo-color.svg';
+import '../App.css';
+import client from '../images/client.svg';
 import axios from 'axios';
 
 
@@ -52,23 +52,30 @@ function Form() {
   }
   return (
 
-    <section className="contact-form" id="contact">
-      <div className="img-login" >
-        <img src={logo} width="343px" alt="logo" />
+    <section className="client-form" id="contact">
+      <div className="newClient-title" >
+        <p> <img src={client} width="13.5px" alt="logo" /> Painel de Clientes</p>
+        <hr></hr>
+      </div>
+      <div className="text-information" >
+        <h5> Novo cliente</h5>
+        <p>Informe os campos a seguir para cadastrar um novo cliente</p>
       </div>
       <form onSubmit={handleFormSubmit}>
         <div className="container">
           <div>
-            <label className="form-label" for="email">E-V
-              <input className="input-small" id="email" name="email" type="email" required="required" onChange={handleInputChange} /></label>
+            <label className="form-label" for="email">Nome
+              <input className="input-small" id="name" name="text" type="text" required="required" onChange={handleInputChange} /></label>
           </div>
           <div>
-            <label for="password" className="form-label">Senha
-              <input className="input-small" id="password" name="password" type="password" required="required" onChange={handleInputChange} /></label>
-
+            <label for="password" className="form-label">Profissão
+              <input className="input-small" id="profession" name="profession" type="text" required="required" onChange={handleInputChange} /></label>
           </div>
         </div>
-        <button className="btn-submit" id="sendMessageButton" type="submit">ACESSAR O SISTEMA</button>
+        <div className="column-2">
+          <button className="btn-primary" id="sendMessageButton" type="submit">Cadastrar</button>
+          <button className="btn-secondary" id="sendMessageButton" >Voltar</button>
+        </div>
       </form >
     </section >
   )

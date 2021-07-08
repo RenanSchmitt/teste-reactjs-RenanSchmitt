@@ -1,0 +1,50 @@
+  .client-form {
+    padding:10rem 15%;
+    background-color: #fff;
+    font-style: italic;
+    flex-direction: column;
+    font-size: calc(8px + 2vmin);
+  }
+
+  @media (min-width: 1081px) {
+    .client-form {
+      padding:5rem 12%;
+      background-color: #fff;
+      font-style: italic;
+      flex-direction: column;
+      font-size: calc(8px + 2vmin);
+      margin-top: 5%;
+      margin-left: 0%;
+    }
+}
+
+input {
+  display: block;
+}
+
+.newClient-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #08436F;
+}
+
+.text-information {
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.text-information h5{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.text-information p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}

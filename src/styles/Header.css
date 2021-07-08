@@ -1,8 +1,37 @@
 
+  .menu {
+    width: 100%;
+    height: 107px;
+    background-color: #08436F;
+  }
+
 @media (min-width: 1081px) {
   .menu {
     width: 100%;
     height: 107px;
     background-color: #08436F;
   }
+}
+
+.headerLogo {
+  width: 283px;
+  padding: 1rem 0rem 0rem 7rem;
+}
+
+@media (min-width: 1081px) {
+  .headerLogo {
+    width: 283px;
+    padding: 1rem 0rem 0rem 12rem;
+  }
+}
+
+.icon {
+  width: 18px;
+  color: #fff;
+  margin-bottom: 3%;
+  text-decoration: none;
+}
+
+.icon:hover{
+  color: rgb(158, 154, 154);
 }
