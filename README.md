@@ -1,4 +1,4 @@
-# teste-reactjs-RenanSchmitt
+# Teste Seleção React - RenanSchmitt
 
 Devido ao curto prazo e a minha pouca disponibilidade de tempo, eu estarei priorizando o projeto em passos de desenvolvimento, acredito que assim eu consiga entregar algo razoavel, ou pelo menos algo que mostre o meu potencial.
 ##
