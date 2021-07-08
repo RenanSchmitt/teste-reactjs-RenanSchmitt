@@ -1,5 +1,5 @@
   .client-form {
-    padding:10rem 15%;
+    padding:5rem 15%;
     background-color: #fff;
     font-style: italic;
     flex-direction: column;
@@ -8,13 +8,10 @@
 
   @media (min-width: 1081px) {
     .client-form {
-      padding:5rem 12%;
       background-color: #fff;
       font-style: italic;
       flex-direction: column;
       font-size: calc(8px + 2vmin);
-      margin-top: 5%;
-      margin-left: 0%;
     }
 }
 
