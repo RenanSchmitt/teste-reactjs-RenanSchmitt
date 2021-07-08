@@ -2,9 +2,9 @@
 
 Devido ao curto prazo e a minha pouca disponibilidade de tempo, eu estarei priorizando o projeto em passos de desenvolvimento, acredito que assim eu consiga entregar algo razoavel, ou pelo menos algo que mostre o meu potencial.
 
-## Agradeço a todos a oportundidade de participar desta segunda etapa da seleção!
+ Agradeço a todos a oportundidade de participar desta segunda etapa da seleção!
  
-# Sequencia de priorização
+## Sequencia de priorização
 
 - Criação do repositorio ✔
 
