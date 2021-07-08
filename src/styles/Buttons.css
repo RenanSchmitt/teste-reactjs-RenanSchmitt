@@ -1,0 +1,133 @@
+
+.btn-transparent {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: #ffffff !important;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 1.25rem 2.5rem;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  border-radius: 5px;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.btn-transparent:hover, .btn-transparent:focus, .btn-transparent:active {
+  background-color: #014647 !important;
+  border-color:  #014647 !important;
+  color: white !important;
+}
+
+.btn-transparent:active {
+  background-color: #014647;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn-primary {
+  background-color: #00CED1;
+  border-color: #00CED1;
+  color: #fff;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 1.25rem 2.5rem;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+  font-style: normal;
+
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #014647  !important;
+  border-color: #014647  !important;
+}
+
+.btn-secondary {
+  background-color: white !important;
+  border-color: #00CED1  !important;
+  color: #00CED1  !important;
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 1.25rem 2.5rem;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: #014647 !important;
+  border-color:  #014647 !important;
+  color: white !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+.btn-submit {
+  background-color: #08436F;
+  border-color: #08436F;
+  color: #fff;
+  width: 370px;
+  height: 44px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 1.25rem 1.5rem 2.0rem 1.5rem;
+  border-radius: 10px;
+
+}
+
+.btn-submit:hover, .btn-submit:focus, .btn-submit:active {
+  background-color: #031e33;
+  border-color: #031e33;
+}
+
+.btn-submit:disabled {
+  background-color: #031e33;
+  border-color: #031e33;
+  background-position: center;
+  text-indent:-9999px;
+}

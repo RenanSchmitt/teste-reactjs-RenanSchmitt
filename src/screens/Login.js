@@ -1,14 +1,12 @@
-
 import '../App.css';
-import Header from '../components/Header';
+import Form from '../components/FormLogin';
 
 
 function Login() {
-  document.title = 'Bott Digital';
+  document.title = 'COOBRASTUR TURISMO';
   return (
     <div className="App">
-      <Header />
-      <h1>HELLO WORLD!</h1>
+      <Form />
     </div >
   );
 }
