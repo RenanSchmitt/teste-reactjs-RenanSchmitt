@@ -11,12 +11,14 @@ class Header extends Component {
     return (
       <section className="menu">
         <nav id="menu">
-          <div class="column-2">
-            <img className="headerLogo" src={logo} alt="Header logo" />
-          </div>
-          <div class="column-2">
-            <a className="icon" href="/logout"> <img src={logout} alt="Logout image" />Sair </a>
-          </div>
+          <ul>
+            <li>
+              <img className="headerLogo" src={logo} alt="Header logo" />
+            </li>
+            <li className="floatRight">
+              <a className="icon" href="/logout"> <img src={logout} alt="Logout image" /> </a>
+            </li>
+          </ul>
         </nav>
       </section >
     );
