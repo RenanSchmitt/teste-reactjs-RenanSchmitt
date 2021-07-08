@@ -4,7 +4,7 @@ Devido ao curto prazo e a minha pouca disponibilidade de tempo, eu estarei prior
 ##
 Agradeço a todos a oportundidade de participar desta segunda etapa da seleção!
  
-- Sequencia de priorização
+# Sequencia de priorização
 
 - Criação do repositorio ✔
 
