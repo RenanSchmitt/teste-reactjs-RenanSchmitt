@@ -53,7 +53,7 @@ class User extends Component {
               </td>
               <td>{email}</td>
               <th>
-                <a className="btn-back" href="/EditarCliente">Editar</a>
+                <a className="btn-back" href={`/EditarCliente?${id}`}>Editar</a>
               </th>
             </tr>
           ))}
