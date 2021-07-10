@@ -18,7 +18,6 @@ function FormEdit() {
 
     campos[event.target.name] = event.target.value;
     setCampos(campos);
-    console.log(campos)
   }
 
   function send() {

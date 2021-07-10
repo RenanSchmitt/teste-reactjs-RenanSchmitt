@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/Header.scss';
 import logo from '../images/logo.svg';
 import logout from '../images/logout.svg';
 import { Link } from 'react-router-dom';
 
-
-//////////
 function Header() {
 
   function checkHiddenButtonNewClient() {
@@ -23,7 +21,6 @@ function Header() {
           document.getElementById("btn-newClient").style.display = "block";
       }
     }, 100);
-
   }
 
   checkHiddenButtonNewClient();
@@ -37,7 +34,7 @@ function Header() {
           </li>
 
           <li className="floatRight">
-            <Link class="icon" to={'/'}> <img src={logout} alt="Logout image" /> </Link>
+            <Link class="icon" to={'/Logout'}> <img src={logout} alt="Logout icon" /> </Link>
           </li>
           <li className="floatRight" style={{ marginTop: "12px", position: "flex" }}>
             <Link class="icon" to={'/NovoCliente'}>

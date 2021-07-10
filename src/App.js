@@ -1,4 +1,5 @@
 import Login from './screens/Login';
+import Logout from './screens/Logout';
 import Clients from './screens/Clients';
 import NewClient from './screens/NewClient';
 import EditClient from './screens/EditClient';
@@ -14,6 +15,8 @@ const App = () => (
       <Route path="/Clientes" exact component={Clients} />
       <Route path="/NovoCliente" exact component={NewClient} />
       <Route path="/EditarCliente" exact component={EditClient} />
+      <Route path="/Logout" exact component={Logout} />
+
 
     </div>
   </Router>

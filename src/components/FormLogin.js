@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/Login.scss';
 import '../styles/Inputs.scss';
 import '../styles/Buttons.scss';
-import loading from '../images/logo.svg';
 import logo from '../images/logo-color.svg';
 import axios from 'axios';
 
@@ -18,26 +17,18 @@ function LoginForm() {
 
     campos[event.target.name] = event.target.value;
     setCampos(campos);
-    console.log(campos)
   }
 
   function send() {
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    // axios.post('https://reqres.in/api/login',
-    //   formData,
-    //   {
-    //     headers: {
-    //       "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
-    //       "Access-Control-Allow-Origin": "*"
-    //     }
-    //   })
-    //   .then(response => { console.log("Tudo certo ", response.data); })
 
-    axios.post(`https://reqres.in/api/login`, { campos })
+    axios.post(`https://reqres.in/api/login`, campos)
       .then(res => {
-        console.log(res);
-        console.log(res.data);
+        if (res.status === 200) {
+          sessionStorage.setItem('token', res.data.token);
+          window.location.href = "/clientes";
+        }
       })
   }
 

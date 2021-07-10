@@ -17,11 +17,9 @@ class ClientsList extends React.Component {
   }
 
   componentDidMount() {
-    const clients = [];
+
     axios.get('https://reqres.in/api/users?page=2')
       .then(response => this.setState({ totalClients: response.data.total }));
-    // .then(response => this.setState({ totalClients: response.data.data.length }));
-
 
     axios.get('https://reqres.in/api/users?page=2')
       .then(response => this.setState({ clients: response.data.data }));
@@ -38,7 +36,6 @@ class ClientsList extends React.Component {
           <p> <img src={client} alt="avatar" /> Painel de Clientes</p>
           <hr></hr>
         </div>
-
         <table>
           <tr>
             <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
@@ -58,7 +55,6 @@ class ClientsList extends React.Component {
             <td>michael.lawson@reqres.in</td>
             <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
           </tr>
-
         </table>
         <div>
           Total: {totalClients} clientes
@@ -68,7 +64,6 @@ class ClientsList extends React.Component {
           <a className="btn-back" href="/clientes">Próximo</a>
         </div>
       </section >
-
     );
   }
 }
