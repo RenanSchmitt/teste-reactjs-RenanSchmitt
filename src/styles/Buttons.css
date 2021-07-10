@@ -134,3 +134,47 @@
 .btn-exit:hover, .btn-exit:focus, .btn-exit:active {
    color: rgba(49, 2, 218, 0.39);
 }
+.btn-back {
+  background-color: #ffffff;
+  border-color: #08436F;
+  color: #08436F;
+  width: 134px;
+  height: 45px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 1.18rem 2.9rem 0.8rem 2.9rem;
+  border-radius: 5px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-back:hover, .btn-back:focus, .btn-back:active {
+  background-color: #09385c;
+  border-color: #748b9c;
+  color: #fff;
+}
+
+
+.btn-new-client {
+  background-color: #ffffff;
+  border-color: #08436F;
+  color: #08436F;
+  width: 134px;
+  height: 30px;
+  font-size: 15px;
+  border-width: 1px;
+  border-style:solid;
+  padding: 0.8rem 2.9rem 0rem 2.9rem;
+  border-radius: 9px;
+  margin-left: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-new-client:hover, .btn-new-client:focus, .btn-new-client:active {
+  background-color: #09385c;
+  border-color: #748b9c;
+  color: #fff;
+}

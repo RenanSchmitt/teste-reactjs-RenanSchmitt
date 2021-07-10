@@ -1,0 +1,33 @@
+table {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 8px;
+}
+
+td, th {
+  padding: 8px;
+  width: 20%;
+     min-width: 120px;
+    height: 18px;
+}
+
+tr {
+  padding: 8px;
+  border: 1px solid #E5E5E5;
+  border-spacing: 0 8px;
+  
+}
+
+.image-content {
+ width: 55px;
+ border-Radius:50px;
+ position: relative;
+}
+
+.pagination {
+  margin-left: 33%;
+}

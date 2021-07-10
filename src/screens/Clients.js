@@ -1,16 +1,20 @@
 
 import '../App.css';
 import Header from '../components/Header';
+import List from '../components/ClientsList';
 
 
-function Login() {
+
+
+function Clients() {
   document.title = 'Bott Digital';
   return (
     <div className="App">
       <Header />
-      <h1>CLIENTE</h1>
+      <List />
+
     </div >
   );
 }
 
-export default Login;
+export default Clients;

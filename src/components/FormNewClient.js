@@ -74,7 +74,7 @@ function Form() {
         </div>
         <div className="column-2">
           <button className="btn-primary" id="sendMessageButton" type="submit">Cadastrar</button>
-          <button className="btn-secondary" id="sendMessageButton" >Voltar</button>
+          <a className="btn-back" href="/clientes">Voltar</a>
         </div>
       </form >
     </section >

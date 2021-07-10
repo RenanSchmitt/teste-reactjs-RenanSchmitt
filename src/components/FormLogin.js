@@ -8,7 +8,7 @@ import axios from 'axios';
 
 
 //////////
-function Form() {
+function LoginForm() {
   const [campos, setCampos] = useState({
     email: '',
     password: '',
@@ -24,31 +24,28 @@ function Form() {
   function send() {
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post('http://localhost:3030/login',
-      formData,
-      {
-        headers: {
-          "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
-          "Access-Control-Allow-Origin": "*"
-        }
+    // axios.post('https://reqres.in/api/login',
+    //   formData,
+    //   {
+    //     headers: {
+    //       "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+    //       "Access-Control-Allow-Origin": "*"
+    //     }
+    //   })
+    //   .then(response => { console.log("Tudo certo ", response.data); })
+
+    axios.post(`https://reqres.in/api/login`, { campos })
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
       })
-      .then(response => { console.log("Tudo certo ", response.data); })
   }
+
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    document.getElementById("loading").style.visibility = 'visible';
-    document.getElementById("sendMessageButton").disabled = true;
+
     send(campos);
-    setTimeout(() => {
-
-      document.getElementById("loading").style.visibility = 'hidden';
-      document.getElementById("sendMessageButton").disabled = false;
-      alert("Mensagem enviada");
-    }, 3000);
-
-
-
   }
   return (
 
@@ -65,7 +62,6 @@ function Form() {
           <div>
             <label for="password" className="form-label">Senha
               <input className="input-small" id="password" name="password" type="password" required="required" onChange={handleInputChange} /></label>
-
           </div>
         </div>
         <button className="btn-submit" id="sendMessageButton" type="submit">ACESSAR O SISTEMA</button>
@@ -74,4 +70,4 @@ function Form() {
   )
 }
 
-export default Form;
+export default LoginForm;
