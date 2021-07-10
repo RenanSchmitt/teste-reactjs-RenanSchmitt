@@ -6,20 +6,19 @@ table {
   border-collapse: collapse;
   width: 100%;
   padding: 8px;
-}
+  tr {
+    padding: 8px;
+    border: 1px solid #E5E5E5;
+    border-spacing: 0 8px;
+    
+  }
 
-td, th {
+  td, th {
   padding: 8px;
   width: 20%;
      min-width: 120px;
     height: 18px;
-}
-
-tr {
-  padding: 8px;
-  border: 1px solid #E5E5E5;
-  border-spacing: 0 8px;
-  
+  }
 }
 
 .image-content {

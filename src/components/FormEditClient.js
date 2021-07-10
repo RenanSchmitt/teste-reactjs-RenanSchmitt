@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../styles/NewClient.css';
-import '../styles/Inputs.css';
-import '../styles/Buttons.css';
+import '../styles/NewClient.scss';
+import '../styles/Inputs.scss';
+import '../styles/Buttons.scss';
 import '../App.css';
 import client from '../images/client.svg';
 import axios from 'axios';

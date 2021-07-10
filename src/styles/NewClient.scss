@@ -1,0 +1,50 @@
+@import 'variables.scss';
+  
+@media (min-width: 1081px) {
+    .client-form {
+    background-color: $secondary-color;
+    font-style: italic;
+    flex-direction: column;
+    font-size: calc(8px + 2vmin);
+  }
+}
+.client-form {
+    padding:5rem 10%;
+    background-color: $secondary-color;
+    font-style: italic;
+    flex-direction: column;
+    font-size: calc(8px + 2vmin);
+  }
+
+input {
+  display: block;
+}
+
+.newClient-title {
+  font-family: $default-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #08436F;
+}
+
+.text-information {
+  font-family: $default-font-family;
+  font-style: normal;
+
+  h5 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+  }
+}
+
+

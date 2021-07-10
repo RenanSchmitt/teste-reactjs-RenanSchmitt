@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import '../styles/NewClient.css';
-import '../styles/Inputs.css';
-import '../styles/Buttons.css';
-import '../styles/Tables.css';
+import '../styles/NewClient.scss';
+import '../styles/Inputs.scss';
+import '../styles/Buttons.scss';
+import '../styles/Table.scss';
 import '../App.css';
 import client from '../images/client.svg';
 

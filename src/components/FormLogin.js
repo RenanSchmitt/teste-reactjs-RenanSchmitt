@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../styles/Login.css';
-import '../styles/Inputs.css';
-import '../styles/Buttons.css';
+import '../styles/Login.scss';
+import '../styles/Inputs.scss';
+import '../styles/Buttons.scss';
 import loading from '../images/logo.svg';
 import logo from '../images/logo-color.svg';
 import axios from 'axios';
