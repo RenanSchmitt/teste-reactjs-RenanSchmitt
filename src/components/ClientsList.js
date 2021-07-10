@@ -44,19 +44,19 @@ class ClientsList extends React.Component {
             <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
             <td>Michael Lawson</td>
             <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/clientes">Editar</a></th>
+            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
           </tr>
           <tr>
             <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
             <td>Michael Lawson</td>
             <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/clientes">Editar</a></th>
+            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
           </tr>
           <tr>
             <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
             <td>Michael Lawson</td>
             <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/clientes">Editar</a></th>
+            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
           </tr>
 
         </table>

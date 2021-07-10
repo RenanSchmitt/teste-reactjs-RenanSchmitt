@@ -7,7 +7,7 @@ import List from '../components/ClientsList';
 
 
 function Clients() {
-  document.title = 'Bott Digital';
+  document.title = 'COOBRASTUR TURISMO - Clientes';
   return (
     <div className="App">
       <Header />

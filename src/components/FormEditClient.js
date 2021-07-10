@@ -8,7 +8,7 @@ import axios from 'axios';
 
 
 //////////
-function Form() {
+function FormEdit() {
   const [campos, setCampos] = useState({
     email: '',
     password: '',
@@ -58,8 +58,8 @@ function Form() {
         <hr></hr>
       </div>
       <div className="text-information" >
-        <h5> Novo cliente</h5>
-        <p>Informe os campos a seguir para cadastrar um novo cliente.</p>
+        <h5> Editar cliente</h5>
+        <p>Informe os campos a seguir para editar cliente existente.</p>
       </div>
       <form onSubmit={handleFormSubmit}>
         <div className="container">
@@ -73,7 +73,7 @@ function Form() {
           </div>
         </div>
         <div className="column-2">
-          <button className="btn-primary" id="sendMessageButton" type="submit">Cadastrar</button>
+          <button className="btn-primary" id="sendMessageButton" type="submit">Editar</button>
           <a className="btn-back" href="/clientes">Voltar</a>
         </div>
       </form >
@@ -81,4 +81,4 @@ function Form() {
   )
 }
 
-export default Form;
+export default FormEdit;

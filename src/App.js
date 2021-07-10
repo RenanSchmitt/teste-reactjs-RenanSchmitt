@@ -1,6 +1,8 @@
 import Login from './screens/Login';
 import Clients from './screens/Clients';
 import NewClient from './screens/NewClient';
+import EditClient from './screens/EditClient';
+
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -11,6 +13,8 @@ const App = () => (
       <Route path="/Login" exact component={Login} />
       <Route path="/Clientes" exact component={Clients} />
       <Route path="/NovoCliente" exact component={NewClient} />
+      <Route path="/EditarCliente" exact component={EditClient} />
+
     </div>
   </Router>
 );

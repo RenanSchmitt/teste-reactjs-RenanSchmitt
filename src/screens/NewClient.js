@@ -5,7 +5,7 @@ import Form from '../components/FormNewClient.js';
 
 
 function NewClient() {
-  document.title = 'COOBRASTUR TURISMO';
+  document.title = 'COOBRASTUR TURISMO - Novo cliente';
   return (
     <div className="App">
       <Header />
