@@ -22,7 +22,7 @@ class Header extends Component {
               <Link class="icon" to={'/'}> <img src={logout} alt="Logout image" /> </Link>
             </li>
             <li className="floatRight" style={{ marginTop: "12px", position: "flex" }}>
-              <Link class="icon" to={'/'}>
+              <Link class="icon" to={'/NovoCliente'}>
                 <a className="btn-new-client" href="/clientes">➕ NOVO CLIENTE</a>
               </Link>
             </li>
