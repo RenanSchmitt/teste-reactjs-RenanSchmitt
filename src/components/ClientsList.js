@@ -1,5 +1,5 @@
-import React from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 import '../styles/NewClient.scss';
 import '../styles/Inputs.scss';
 import '../styles/Buttons.scss';
@@ -7,29 +7,36 @@ import '../styles/Table.scss';
 import '../App.css';
 import client from '../images/client.svg';
 
-class ClientsList extends React.Component {
-  constructor(props) {
-    super(props);
+class User extends Component {
+  state = {
+    people: []
+  };
 
-    this.state = {
-      totalClients: null
-    };
-  }
+
 
   componentDidMount() {
-
     axios.get('https://reqres.in/api/users?page=2')
       .then(response => this.setState({ totalClients: response.data.total }));
 
-    axios.get('https://reqres.in/api/users?page=2')
-      .then(response => this.setState({ clients: response.data.data }));
+
+    axios
+      .get("https://reqres.in/api/users?page=1")
+      .then(response => {
+        this.successShow(response);
+      })
+      .catch(error => {
+        this.successShow(error);
+      });
+  }
+
+  successShow(response) {
+    this.setState({
+      people: response.data.data
+    });
   }
 
   render() {
     const { totalClients } = this.state;
-    const { clients } = this.state;
-
-    console.log(clients)
     return (
       <section className="client-form" id="contact">
         <div className="newClient-title" >
@@ -37,24 +44,22 @@ class ClientsList extends React.Component {
           <hr></hr>
         </div>
         <table>
-          <tr>
-            <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
-            <td>Michael Lawson</td>
-            <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
-          </tr>
-          <tr>
-            <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
-            <td>Michael Lawson</td>
-            <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
-          </tr>
-          <tr>
-            <td><img className="image-content" src={"https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"} alt="avatar" /></td>
-            <td>Michael Lawson</td>
-            <td>michael.lawson@reqres.in</td>
-            <th><a className="btn-back" href="/EditarCliente">Editar</a></th>
-          </tr>
+
+          {this.state.people.map(({ id, first_name, last_name, avatar, email }) => (
+            <tr key={id}>
+              <td>
+                <img className="image-content" src={avatar} alt="avatar" />
+              </td>
+              <td >
+                {first_name}{last_name}
+              </td>
+              <td>{email}</td>
+              <th>
+                <a className="btn-back" href="/EditarCliente">Editar</a>
+              </th>
+            </tr>
+          ))}
+
         </table>
         <div>
           Total: {totalClients} clientes
@@ -63,9 +68,8 @@ class ClientsList extends React.Component {
           <a className="btn-back" href="/clientes">Anterior</a>
           <a className="btn-back" href="/clientes">Próximo</a>
         </div>
-      </section >
+      </section>
     );
   }
 }
-
-export default ClientsList;
+export default User;
