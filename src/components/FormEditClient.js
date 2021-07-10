@@ -10,44 +10,35 @@ import axios from 'axios';
 //////////
 function FormEdit() {
   const [campos, setCampos] = useState({
-    email: '',
-    password: '',
+    name: '',
+    job: '',
   });
 
   function handleInputChange(event) {
 
     campos[event.target.name] = event.target.value;
     setCampos(campos);
+    console.log(campos);
   }
 
   function send() {
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post('http://localhost:3030/login',
-      formData,
-      {
-        headers: {
-          "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
-          "Access-Control-Allow-Origin": "*"
+
+    axios.post('https://reqres.in/api/users/2', campos)
+      .then(response => {
+        if (response.status === 201) {
+          alert("Usuário editado com sucesso.");
+          window.location.href = "/clientes";
+        } else {
+          alert("Houve um erro ao editar o usuário.");
         }
       })
-      .then(response => { console.log("Tudo certo ", response.data); })
   }
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    document.getElementById("loading").style.visibility = 'visible';
-    document.getElementById("sendMessageButton").disabled = true;
     send(campos);
-    setTimeout(() => {
-
-      document.getElementById("loading").style.visibility = 'hidden';
-      document.getElementById("sendMessageButton").disabled = false;
-      alert("Mensagem enviada");
-    }, 3000);
-
-
-
   }
   return (
 
@@ -63,12 +54,12 @@ function FormEdit() {
       <form onSubmit={handleFormSubmit}>
         <div className="container">
           <div>
-            <label className="form-label" for="email">Nome
-              <input className="input-small" id="name" name="text" type="text" required="required" onChange={handleInputChange} /></label>
+            <label className="form-label" for="name">Nome
+              <input className="input-small" id="name" name="name" type="text" required="required" onChange={handleInputChange} /></label>
           </div>
           <div>
             <label for="password" className="form-label">Profissão
-              <input className="input-small" id="profession" name="profession" type="text" required="required" onChange={handleInputChange} /></label>
+              <input className="input-small" id="profession" name="job" type="text" required="required" onChange={handleInputChange} /></label>
           </div>
         </div>
         <div className="column-2">

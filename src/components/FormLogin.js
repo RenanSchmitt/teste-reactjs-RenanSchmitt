@@ -32,7 +32,6 @@ function LoginForm() {
       })
   }
 
-
   function handleFormSubmit(event) {
     event.preventDefault();
 
