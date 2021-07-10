@@ -1,7 +1,7 @@
 
 @import 'variables.scss';
   
-  @media (max-width: 1081px) {
+@media (max-width: 1081px) {
   .contact-form {
     padding:10rem 15%;
     background-color: $secondary-color;
@@ -9,20 +9,19 @@
     flex-direction: column;
     font-size: calc(8px + 2vmin);
   }
-  }
+}
 
-
-  @media (min-width: 1081px) {
-    .contact-form {
-      padding:10rem 15%;
-      background-color: $secondary-color;
-      font-style: italic;
-      flex-direction: column;
-      font-size: calc(8px + 2vmin);
-      margin-top: 5%;
-      margin-left: 25%;
-    }
+@media (min-width: 1081px) {
+  .contact-form {
+    padding:10rem 15%;
+    background-color: $secondary-color;
+    font-style: italic;
+    flex-direction: column;
+    font-size: calc(8px + 2vmin);
+    margin-top: 5%;
+    margin-left: 25%;
   }
+}
 
 input {
   display: block;

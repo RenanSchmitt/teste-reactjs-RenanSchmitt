@@ -3,9 +3,6 @@ import '../App.css';
 import Header from '../components/Header';
 import List from '../components/ClientsList';
 
-
-
-
 function Clients() {
   document.title = 'COOBRASTUR TURISMO - Clientes';
   if (sessionStorage.getItem('token') === null) {

@@ -1,6 +1,5 @@
 import '../App.css';
 
-
 function Logout() {
   document.title = 'COOBRASTUR TURISMO - Logout';
 

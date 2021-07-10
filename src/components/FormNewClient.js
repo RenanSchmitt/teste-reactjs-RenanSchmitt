@@ -6,8 +6,6 @@ import '../App.css';
 import client from '../images/client.svg';
 import axios from 'axios';
 
-
-//////////
 function FormEdit() {
   const [campos, setCampos] = useState({
     name: '',

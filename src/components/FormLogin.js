@@ -5,8 +5,6 @@ import '../styles/Buttons.scss';
 import logo from '../images/logo-color.svg';
 import axios from 'axios';
 
-
-//////////
 function LoginForm() {
   const [campos, setCampos] = useState({
     email: '',

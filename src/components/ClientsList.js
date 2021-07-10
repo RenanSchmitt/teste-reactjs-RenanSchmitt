@@ -14,9 +14,7 @@ class User extends Component {
 
   componentDidMount(pageNumber) {
     axios.get('https://reqres.in/api/users?page=2')
-
       .then(response => this.setState({ totalClients: response.data.total }));
-
 
     axios
       .get(`https://reqres.in/api/users?page=${pageNumber}`)

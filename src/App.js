@@ -4,7 +4,6 @@ import Clients from './screens/Clients';
 import NewClient from './screens/NewClient';
 import EditClient from './screens/EditClient';
 
-
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => (
@@ -16,8 +15,6 @@ const App = () => (
       <Route path="/NovoCliente" exact component={NewClient} />
       <Route path="/EditarCliente" exact component={EditClient} />
       <Route path="/Logout" exact component={Logout} />
-
-
     </div>
   </Router>
 );

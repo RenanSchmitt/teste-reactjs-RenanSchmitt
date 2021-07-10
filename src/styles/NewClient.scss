@@ -8,6 +8,10 @@
     font-size: calc(8px + 2vmin);
   }
 }
+
+input {
+  display: block;
+}
 .client-form {
     padding:5rem 10%;
     background-color: $secondary-color;
@@ -16,9 +20,7 @@
     font-size: calc(8px + 2vmin);
   }
 
-input {
-  display: block;
-}
+
 
 .newClient-title {
   font-family: $default-font-family;
