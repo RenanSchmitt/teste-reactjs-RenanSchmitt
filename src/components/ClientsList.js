@@ -12,15 +12,14 @@ class User extends Component {
     people: []
   };
 
-
-
-  componentDidMount() {
+  componentDidMount(pageNumber) {
     axios.get('https://reqres.in/api/users?page=2')
+
       .then(response => this.setState({ totalClients: response.data.total }));
 
 
     axios
-      .get("https://reqres.in/api/users?page=1")
+      .get(`https://reqres.in/api/users?page=${pageNumber}`)
       .then(response => {
         this.successShow(response);
       })
@@ -37,6 +36,7 @@ class User extends Component {
 
   render() {
     const { totalClients } = this.state;
+
     return (
       <section className="client-form" id="contact">
         <div className="newClient-title" >
@@ -65,8 +65,8 @@ class User extends Component {
           Total: {totalClients} clientes
         </div>
         <div className="column-2 pagination" >
-          <a className="btn-back" href="/clientes">Anterior</a>
-          <a className="btn-back" href="/clientes">Próximo</a>
+          <button className="btn-secondary" id="sendMessageButton" type="submit" onClick={() => this.componentDidMount(1)}>Anterior</button>
+          <button className="btn-secondary" id="sendMessageButton" type="submit" onClick={() => this.componentDidMount(2)}>Próximo</button>
         </div>
       </section>
     );

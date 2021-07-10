@@ -36,4 +36,8 @@ https://trello.com/b/08xTg6DR/coobrastour-teste-react
 ## Video explicando como o projeto foi desenvolvido:
 https://youtube.com
 
+## Login e senha para acessar a aplicação:
+- E-mail: eve.holt@reqres.in
+- Password: cityslicka
+
 # Obrigado pela sua atenção!
