@@ -1,8 +1,12 @@
 # Teste Seleção React - RenanSchmitt
 
-Devido ao curto prazo e pouca disponibilidade de tempo, eu estarei priorizando o projeto em passos de desenvolvimento, acredito que assim eu consiguirei me manter no cronograma, espero que gostem do resultado final e que este teste possa mostrar o meu potencial como desenvolvedor.
+Bom dia, tudo bom com você?
 
- Agradeço a todos a oportundidade de participar desta segunda etapa da seleção!
+Devido ao curto prazo e pouca disponibilidade de tempo, eu optei por priorizar a implementação do projeto em vários passos de desenvolvimento, acredito que assim eu conseguirei me organizar melhor e me manter no cronograma.
+
+ Espero que gostem do resultado e que este teste consiga mostrar potencial que possuo para atuar como desenvolvedor.
+
+Agradeço a todos a oportunidade de participar desta segunda etapa da seleção!
  
 ## Sequencia de priorização
 
